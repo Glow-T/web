@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="html;charset=utf-8">
+    <title>表单小结</title>
+</head>
+
+<body>
+    <form action=".jsp">
+        <p>申请表</p>
+        <p>姓名：<input type="text" name="username" width="20" maxlength="30"></p>
+        <p><input type="hidden" name="name" value="zhangsan"></p>
+        <p>密码：<input type="password" name="pwd" width="20" maxlength="30"></p>
+        <p>照片：</p>
+        <p><input type="file" name="photo"></p>
+        <p>感兴趣的职位：</p>
+        <p><input type="radio" name="job" value="design" checked>Web设计<input type="radio" name="job"
+                value="develop">Web开发
+        </p>
+        <p>向往城市：<select name="city" size="1">
+                <option value="请选择" selected>请选择</option>
+                <option value="南京">南京</option>
+                <option value="上海">上海</option>
+            </select></p>
+        <p>协议：</p>
+        <p>
+            <textarea name="协议" cols="30" rows="6" readonly>求职信息必须真实，准确，本网站只负责向企业推荐。</textarea>
+        </p>
+        <p><input type="checkbox" name="check" checked>我认真阅读并接受以上协议。</p>
+        <p>经验：</p>
+        <p><select name="experience" size="1">
+                <option value="无经验" selected>无经验</option>
+                <option value="1~3年">1~3年</option>
+                <option value="3年以上">3年以上</option>
+            </select></p>
+        <p><input type="submit" value="提交" disabled>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset"
+                value="重置"></p>
+    </form>
+</body>
+
+</html>
