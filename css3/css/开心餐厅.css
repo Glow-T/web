@@ -1,0 +1,16 @@
+body h2 {
+    font-size: 16px;
+}
+p {
+    font-size: 14px;
+}
+.h2class{
+    color: red;
+}
+h2 ~ h2 {
+    color: blue;
+}
+header > img {
+    width: 887px;
+    height: 439px;
+}
