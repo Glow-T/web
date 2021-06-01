@@ -1,10 +1,15 @@
-div {
-    width: 210px;
-    height: 400px;
-    display: inline-block;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-h3:first-child {
-    font-size:16px;
+body {
+    margin: 0 auto;
+    width: 1000px;
+}
+h3:first-of-type {
+    font-size:18px;
+    line-height: 40px;
     color: #4d4d4d;
 }
 p:first-of-type {
@@ -16,6 +21,21 @@ p:nth-of-type(2) {
     color: blue;
 }
 ul {
-    margin:0;
-    padding:0
+    list-style: none;
+}
+li {
+    display: inline-block;
+    width: 235px;
+    height: 400px;
+    margin-right: 5px;
+    padding:10px;
+}
+li:hover {
+    list-style: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .1),0 0 10px 0 rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    border: 1px solid black;
+}
+img { 
+    border-radius: 15px;
 }
